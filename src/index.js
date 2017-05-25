@@ -8,16 +8,15 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-// import reducers from './reducers';
-//
-// const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
-//
-// ReactDOM.render(
-//   <Provider store={createStoreWithMiddleware(reducers)}>
-//     <App />
-//   </Provider>
-//   , document.getElementById('root'));
+import reducers from './reducers';
 
+const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
+
+ReactDOM.render(
+  <Provider store={createStoreWithMiddleware(reducers)}>
+    <App />
+  </Provider>
+  , document.getElementById('root'));
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

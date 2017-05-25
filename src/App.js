@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SearchBar from './components/search_bar';
 import logo from './logo.svg';
 import './App.css';
 
@@ -10,9 +11,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Weather</h2>
         </div>
-        <p className="App-intro">
-          Current Weather
-        </p>
+        <SearchBar />
         <h5>Weather Card Here</h5>
       </div>
     );
