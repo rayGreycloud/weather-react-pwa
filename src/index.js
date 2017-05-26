@@ -8,7 +8,7 @@ import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import './styles/index.css';
 
-import reducers from './reducers';
+import reducers from './reducers/index';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 

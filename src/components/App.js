@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import SearchBar from './components/search_bar';
-import logo from './logo.svg';
-import '../styles/App.css';
 
+// import SearchBar from './search_bar';
+import logo from '../logo.svg';
+import '../styles/App.css';
+const SearchBar = require('./search_bar').SearchBar;
 class App extends Component {
   render() {
     return (
