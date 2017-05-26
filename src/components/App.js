@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-
-// import SearchBar from './search_bar';
 import logo from '../logo.svg';
 import '../styles/App.css';
+
 const SearchBar = require('./search_bar').SearchBar;
+const WeatherList = require('./weather_list').WeatherList;
+
 class App extends Component {
   render() {
     return (
@@ -13,7 +14,7 @@ class App extends Component {
           <h2>Weather</h2>
         </div>
         <SearchBar />
-        <h5>Weather Card Here</h5>
+        <WeatherList />
       </div>
     );
   }
