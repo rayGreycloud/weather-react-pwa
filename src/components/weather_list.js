@@ -6,6 +6,7 @@ import '../styles/weatherlist.css';
 
 export class WeatherList extends Component {
   renderWeather(cityData) {
+    console.log("cityData: ", cityData);
     const name = cityData.city.name;
     const temps = cityData.list.map(weather => weather.main.temp);
     const pressures = cityData.list.map(weather => weather.main.pressure);
